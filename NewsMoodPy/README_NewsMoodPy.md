@@ -13,6 +13,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import datetime
 import re
+import configuration as config
 
 # Import and Initialize Sentiment Analyzer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -22,10 +23,10 @@ analyzer = SentimentIntensityAnalyzer()
 
 ```python
 # Twitter API Keys
-consumer_key = "Ed4RNulN1lp7AbOooHa9STCoU"
-consumer_secret = "P7cUJlmJZq0VaCY0Jg7COliwQqzK0qYEyUF9Y0idx4ujb3ZlW5"
-access_token = "839621358724198402-dzdOsx2WWHrSuBwyNUiqSEnTivHozAZ"
-access_token_secret = "dCZ80uNRbFDjxdU2EckmNiSckdoATach6Q8zb7YYYE5ER"
+consumer_key = config.consumer_key
+consumer_secret = config.consumer_secret
+access_token = config.access_token
+access_token_secret = config.access_token_secret
 
 now = datetime.datetime.now()
 rpt_DT = now.strftime("%Y-%m-%d")
@@ -34,7 +35,7 @@ print (rpt_DT)
 ```
 
     Current date and time using strftime:
-    2018-03-27
+    2018-03-28
 
 
 
